@@ -5,7 +5,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         Animal loup = new Loup(23, "Noir");
-        Animal chien = new Chien(12, "Blanc");
+        Chien chien = new Chien(12, "Blanc");
 
         Animal chat = new Chat(11, "Marron");
         Animal tigre = new Tigre(34, "Orange");
@@ -13,6 +13,6 @@ public class Main {
 
         System.out.println(loup.toString());
 
-
+        chien.faireCalin();
     }
 }
