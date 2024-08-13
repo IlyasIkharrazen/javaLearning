@@ -4,22 +4,15 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+        Animal loup = new Loup(23, "Noir");
+        Animal chien = new Chien(12, "Blanc");
 
-        direBonjour("Ilyas");
-        Ville ville = new Ville("Marseille", 123232,"France");
-        Capitale capital = new Capitale("Marseille", 123232,"France");
-        System.out.println(ville.getNomPays() + " " + ville.getNomVille() + " " + ville.getNbreHabitant());
+        Animal chat = new Chat(11, "Marron");
+        Animal tigre = new Tigre(34, "Orange");
+        Animal lion = new Lion(50, "Gris");
 
-        ville.setNomVille("Tanger");
-        ville.setNomPays("Maroc");
-        ville.setNbreHabitant(73467382);
+        System.out.println(loup.toString());
 
-        System.out.println(capital.decrisToi());
 
-        System.out.println(capital.getNomPays() + " " + capital.getNomVille() + " " + capital.getNbreHabitant());
-
-    }
-    public static void direBonjour(String prenom){
-        System.out.println("Bonjour " + prenom);
     }
 }
